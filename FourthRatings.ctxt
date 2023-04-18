@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=FourthRatings
+comment1.params=
+comment1.target=FourthRatings()
+comment10.params=rater_id\ numSimilarRaters\ minimalRaters
+comment10.target=java.util.ArrayList\ getSimilarRatings(java.lang.String,\ int,\ int)
+comment11.params=rater_id\ numSimilarRaters\ minimalRaters\ filterCriteria
+comment11.target=java.util.ArrayList\ getSimilarRatingsByFilter(java.lang.String,\ int,\ int,\ Filter)
+comment2.params=ratingsfile
+comment2.target=FourthRatings(java.lang.String)
+comment3.params=rater_id
+comment3.target=Rater\ getRater(java.lang.String)
+comment4.params=
+comment4.target=int\ getRaterSize()
+comment5.params=movie_id\ minimalRaters
+comment5.target=double\ getAverageByID(java.lang.String,\ int)
+comment6.params=minimalRaters
+comment6.target=java.util.ArrayList\ getAverageRatings(int)
+comment7.params=minimalRaters\ filterCriteria
+comment7.target=java.util.ArrayList\ getAverageRatingsByFilter(int,\ Filter)
+comment8.params=me\ r
+comment8.target=double\ dotProduct(Rater,\ Rater)
+comment8.text=private\ double\ dotProduct(Rater\ me,\ Rater\ r){\r\n\ \ \ \ \ \ \ \ HashMap<String,Rating>\ myRatings\ \=\ me.getaRating();\r\n\ \ \ \ \ \ \ \ HashMap<String,Rating>\ rRatings\ \=\ r.getaRating();\r\n\ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ double\ dotProduct\ \=\ 0;\r\n\ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ for(Rating\ entry\:\ myRatings.values()){\r\n\ \ \ \ \ \ \ \ \ \ \ \ for(Rating\ rEntry\ \:\ rRatings.values()){\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ if(entry.getItem().equals(rEntry.getItem())){\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ double\ meRating\ \=\ entry.getValue()-5;\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ double\ rRating\ \=\ rEntry.getValue()-5;\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ dotProduct\ \=\ dotProduct\ +\ \ (meRating\ *\ rRating);\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ return\ dotProduct;\r\n}
+comment9.params=id
+comment9.target=java.util.ArrayList\ getSimilarities(java.lang.String)
+numComments=12
